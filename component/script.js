@@ -2,6 +2,8 @@ const use = document.querySelector(".use"),
   psw = document.querySelector(".psw"),
   buttn = document.querySelector(".buttn"),
   regist = document.querySelector(".regist"),
+  entrance = document.querySelector(".entrance"),
+  blockEntrance = document.querySelector(".block_entrance"),
   blockRegist = document.querySelector(".block_regist");
 
 let a = 1;
@@ -31,11 +33,11 @@ const objList = () => {
     .then((body) => console.log(body))
     .catch((error) => console.log(error));
 
-  if (i === 1) {
-    blockRegist.classList.remove("open");
-    blockRegist.classList.add("close");
-    i = 0;
-  }
+  // if (i === 1) {
+  //   blockRegist.classList.remove("open");
+  //   blockRegist.classList.add("close");
+  //   i = 0;
+  // }
   // location.href = "http://127.0.0.1:5500/component/chat.html";
 };
 
@@ -51,6 +53,7 @@ regist.addEventListener("click", () => {
   } else if (i === 1) {
     blockRegist.classList.remove("open");
     blockRegist.classList.add("close");
+    blockEntrance.classList.add("open");
     i = 0;
   }
 });

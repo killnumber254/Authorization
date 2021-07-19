@@ -14,64 +14,44 @@
 <body>
 
     <div class="contener">
-        <nav class="nav">
-            <button class="entrance">Вход</button>
-            <button class="regist">Регистрация</button>
-        </nav>
+        <div class="borders">
+            <nav class="nav">
+                <button class="entrance">Вход</button>
+                <button class="regist">Регистрация</button>
+            </nav>
 
-        <!-- <div class="block_entrance close">
-            <span class="text_entrance">Вход</span>
 
-            <input type="text" name="names" class="userse" placeholder="Ник">
-            <input type="text" name="pswd" class="pass" placeholder="Пароль">
-            <button type="submit" class="butt">Отправить</button>
-            <p class="error"></p>
 
-        </div> -->
+            <div class="block_entrance close">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input type="text" name="names" class="form-control userse" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="pswd" class="form-control pass" id="exampleInputPassword1">
+                </div>
 
-        <div class="block_entrance close">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="text" name="names" class="form-control userse" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
-                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                <button type="submit" class="btn btn-primary butt">Submit</button>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" name="pswd" class="form-control pass" id="exampleInputPassword1">
+
+
+
+            <div class="block_regist close">
+                <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control use" id="exampleInputEmail2"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label">Password</label>
+                    <input type="password" name="psw" class="form-control psw" id="exampleInputPassword2">
+                </div>
+
+                <button class="btn btn-primary buttn">Submit</button>
             </div>
-            <!-- <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button type="submit" class="btn btn-primary butt">Submit</button>
-        </div>
-
-
-        <!-- <div class="block_regist close">
-            <span class="text_regist">Форма регистрации</span>
-
-            <input type="text" name="name" class="use" minlength="5" placeholder="Ник">
-            <input type="text" name="psw" class="psw" minlength="6" placeholder="Пароль">
-            <button class="btn">Отправить</button>
-
-        </div> -->
-        <div class="block_regist close">
-            <div class="mb-3">
-                <label for="exampleInputEmail2" class="form-label">Name</label>
-                <input type="text" name="name" class="form-control use" id="exampleInputEmail2"
-                    aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword2" class="form-label">Password</label>
-                <input type="password" name="psw" class="form-control psw" id="exampleInputPassword2">
-            </div>
-            <!-- <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button class="btn btn-primary buttn">Submit</button>
         </div>
     </div>
 
