@@ -2,8 +2,6 @@ const use = document.querySelector(".use"),
   psw = document.querySelector(".psw"),
   buttn = document.querySelector(".buttn"),
   regist = document.querySelector(".regist"),
-  entrance = document.querySelector(".entrance"),
-  blockEntrance = document.querySelector(".block_entrance"),
   blockRegist = document.querySelector(".block_regist");
 
 let a = 1;
@@ -38,7 +36,8 @@ const objList = () => {
   //   blockRegist.classList.add("close");
   //   i = 0;
   // }
-  // location.href = "http://127.0.0.1:5500/component/chat.html";
+  location.href =
+    "https://killnumber254.github.io/Authorization/component/chat/chat.html";
 };
 
 buttn.addEventListener("click", objList);

@@ -1,7 +1,9 @@
 const userse = document.querySelector(".userse"),
   pass = document.querySelector(".pass"),
   butt = document.querySelector(".butt"),
-  error = document.querySelector(".error");
+  error = document.querySelector(".error"),
+  entrance = document.querySelector(".entrance"),
+  blockEntrance = document.querySelector(".block_entrance");
 console.log(userse);
 console.log(pass);
 console.log(userse.value);
@@ -36,25 +38,25 @@ const objLists = () => {
     })
     .catch((error) => console.log(error));
 
-  // if (s === 1) {
-  //   blockEntrance.classList.remove("open");
-  //   blockEntrance.classList.add("close");
-  //   s = 0;
-  // }
+  if (s === 1) {
+    blockEntrance.classList.remove("open");
+    blockEntrance.classList.add("close");
+    s = 0;
+  }
 };
 
 butt.addEventListener("click", objLists);
 
-// let s = 0;
+let s = 0;
 
-// entrance.addEventListener("click", () => {
-//   if (s === 0) {
-//     blockEntrance.classList.remove("close");
-//     blockEntrance.classList.add("open");
-//     s = 1;
-//   } else if (s === 1) {
-//     blockEntrance.classList.remove("open");
-//     blockEntrance.classList.add("close");
-//     s = 0;
-//   }
-// });
+entrance.addEventListener("click", () => {
+  if (s === 0) {
+    blockEntrance.classList.remove("close");
+    blockEntrance.classList.add("open");
+    s = 1;
+  } else if (s === 1) {
+    blockEntrance.classList.remove("open");
+    blockEntrance.classList.add("close");
+    s = 0;
+  }
+});
