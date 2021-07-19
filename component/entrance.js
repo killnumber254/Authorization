@@ -27,7 +27,8 @@ const objLists = () => {
     .then((body) => {
       console.log(body);
       if (body.username) {
-        location.href = "http://127.0.0.1:5500/component/chat/chat.html";
+        location.href =
+          "https://killnumber254.github.io/Authorization/component/chat/chat.html";
       }
       if (body.error) {
         error.innerText = "Вы ввели неверный логин или пароль";
