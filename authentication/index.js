@@ -116,15 +116,10 @@ app.post("/login", (req, res, next) => {
       if (err) {
         return res.status(401).json({ error: err });
       }
-      res.cookie("Token", token.tokens);
+      console.log(res.cookie("Token", token.tokens));
       return res.status(200).json(user);
     });
   })(req, res, next);
-});
-
-app.post("/message", (req, res) => {
-  if (!req.body) return res.status(400);
-  console.log(req.body);
 });
 
 module.exports = app;
