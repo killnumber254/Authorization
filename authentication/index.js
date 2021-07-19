@@ -23,7 +23,7 @@ app.use(
     saveUninitialized: true,
     session: true,
     cookie: {
-      maxAge: -1,
+      maxAge: 3600 * 2,
     },
   })
 );
@@ -120,6 +120,11 @@ app.post("/login", (req, res, next) => {
       return res.status(200).json(user);
     });
   })(req, res, next);
+});
+
+app.post("/message", (req, res) => {
+  if (!req.body) return res.status(400);
+  console.log(req.body);
 });
 
 module.exports = app;

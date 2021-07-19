@@ -24,7 +24,7 @@ const objLists = () => {
     body: JSON.stringify(users),
   };
 
-  fetch(" ", fetchOptions)
+  fetch("http://127.0.0.1:5000/login", fetchOptions)
     .then((res) => res.json())
     .then((body) => {
       console.log(body);
